@@ -1,2 +1,2 @@
-# categories-excercise
-Categories Excercise
+# categories exercise
+Categories exercise
