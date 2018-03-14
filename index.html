@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="models.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body onload="domFunctions()">
+	<section>
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Category ID</th>
+					<th>Parent Category ID</th>
+					<th>Name</th>
+					<th>Keywords</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>100</td><td>-1</td><td>Business</td><td>Money</td></tr>
+				<tr><td>200</td><td>-1</td><td>Tutoring</td><td>Teaching</td></tr>
+				<tr><td>101</td><td>100</td><td>Accounting</td><td>Taxes</td></tr>
+				<tr><td>102</td><td>100</td><td>Taxation</td><td></td></tr>
+				<tr><td>201</td><td>200</td><td>Computer</td><td></td></tr>
+				<tr><td>103</td><td>101</td><td>Corporate Tax</td><td></td></tr>
+				<tr><td>202</td><td>201</td><td>Operating System</td><td></td></tr>
+				<tr><td>109</td><td>101</td><td>Small business Tax</td><td></td></tr>
+			</tbody>
+		</table>
+	</section>
+	<section>
+		<header>
+			<h1>Category finder</h1>
+		</header>	
+		<article>
+			<p>Category Id Details and Keywords</p>
+			<input type="number" name="txtCategoryId" id="txtCategoryId" placeholder="(p.e: 202)"/>
+			<button id="btnGetCategoryDetails">Get</button>
+		</article>
+		<article>
+			<p>Categories from determinated level</p>
+			<input type="number" name="txtLevel" id="txtLevel" placeholder="(p.e: 2)"/>
+			<button id="btnGetCategoriesFromLevel">Get</button>
+		</article>
+	</section>
+	<section>
+		<p id="ResultText"></p>
+	</section>	
+</body>
+</html>
